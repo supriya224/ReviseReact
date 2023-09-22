@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState, useRef } from "react";
-// import './App.css'
 
 function App() {
 
@@ -31,6 +30,7 @@ function App() {
 window.navigator.clipboard.writeText(password)
   },[password])
 
+
   // console.log("copyPasswordToClipboars");
   useEffect(() => {
     passwordGenerator();
@@ -53,7 +53,7 @@ window.navigator.clipboard.writeText(password)
             ref={passwordRef}
 
           />
-          <button onClick={copyPasswordToClipboars} onChange={{style}} className="outline-none bg-blue-600 text-white px-3 py-0.5 shrink-0">
+          <button onClick={copyPasswordToClipboars} className="outline-none bg-blue-600 text-white px-3 py-0.5 shrink-0">
             copy
           </button>
         </div>
